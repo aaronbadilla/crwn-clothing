@@ -23,8 +23,9 @@ export const subtractItemFromCart = (cartItems, cartItemToSubtract) => {
     if (existingCartItem.quantity === 1) {
         return cartItems.filter(cartItem => cartItem.id !== cartItemToSubtract.id)
     }
+
     return cartItems.map(cartItem =>
             cartItem.id === cartItemToSubtract.id 
             ? {...cartItem, quantity: cartItem.quantity - 1}
-            : cartItems)
+            : cartItem)
 } 
