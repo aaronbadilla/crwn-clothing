@@ -14,6 +14,7 @@ import {selectCurrentUser} from './redux/user/user.selectors.js'
 import {createStructuredSelector} from 'reselect'
 
 
+
 class App extends React.Component{
 
   unsubscribeFromAuth = null
